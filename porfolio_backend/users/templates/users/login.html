@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  login
+{% endblock %}
+
+{% block content %}
+
+    <section>
+        <h1>Login</h1>
+        <form action="{% url 'users:login' %}" 
+        method="post">
+        {% csrf_token %}
+        {{ form }}
+        {% if request.GET.next %}
+          <input type="hidden" name="next" value="{{ request.GET.next }}">
+        {% endif %}
+          <button>Submit</button>
+        </form>
+        <a class="link-to"  href="{% url 'users:register' %}" title="Register">Create an account with us?</a>
+    </section>
+
+{% endblock %}

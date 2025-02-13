@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  register
+{% endblock %}
+
+{% block content %}
+
+    <section>
+        <h1>Register a new user</h1>
+        <form action="{% url 'users:login' %}" 
+        method="post">
+        {% csrf_token %}
+        {{ form }}
+          <button>Submit</button>
+        </form>
+        <a class="link-to" href="{% url 'users:login' %}" title="login">Already have an account?</a></li>
+    </section>
+
+{% endblock %}src
