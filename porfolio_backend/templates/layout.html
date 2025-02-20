@@ -20,9 +20,20 @@
             <li><a href="{% url 'posts:list' %}" title="Posts">📃</a></li> |
             
             {% if user.is_authenticated %}
+            
             <li><a href="{% url 'posts:new-post' %}" title="new post">🖊</a></li> |
-            <li><form class="logout" action="{% url 'users:logout' %}" method="post" title="logout"> {% csrf_token %}
-                <button>👉</button></form></li> |
+            <li>
+                <form 
+                    class="logout" 
+                    action="{% url 'users:logout' %}" 
+                    method="post" 
+                    title="logout"> 
+
+                        {% csrf_token %}
+                        <button>👉</button>
+
+                </form>
+            </li> |
                 {% else %}
                 <li><a href="{% url 'users:login' %}" title="login">🗝</a></li> |
                 
