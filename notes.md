@@ -2,9 +2,9 @@
 
 ```
 
-https://www.youtube.com/watch?v=xldTxXtNiuk
-https://www.youtube.com/watch?v=F9o4GSkSo40&t=250s
-https://www.youtube.com/watch?v=Rp5vd34d-z4&t=6684s
+Books: https://www.youtube.com/watch?v=xldTxXtNiuk
+Todo app: https://www.youtube.com/watch?v=F9o4GSkSo40&t=250s
+This app: https://www.youtube.com/watch?v=Rp5vd34d-z4&t=6684s
 
 # Django course
 
